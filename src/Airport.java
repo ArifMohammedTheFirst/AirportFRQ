@@ -22,7 +22,11 @@ public class Airport
      */
     public double getTotalRevenue()
     {
-        /* to be implemented in part (a) */
+        double total = 0;
+        for( Flight allFlights: allFlights) {
+            total += allFlights.getPrice();
+        }
+        return total;
     }
 
     /** Updates the list of flights by removing certain flights and
@@ -31,6 +35,6 @@ public class Airport
      */
     public int updateFlights()
     {
-        /* to be implemented in part (b) */
+        
     }
 }
